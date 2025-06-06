@@ -1,4 +1,4 @@
-# DualDXF: Holistic Representation Learning for CAD Drawings
+# DualDXF
 
 ## 🎯 Abstract
 
@@ -15,7 +15,7 @@ This repository provides the official implementation for our paper:
 
 ## 📋 Prerequisites
 
-- 🐧 **Linux** (Ubuntu 18.04+ recommended)
+- 🐧 **Linux** Ubuntu 18.04+
 - 🚀 **NVIDIA GPU** with CUDA 11.0+ and cuDNN 8.0+
 - 🐍 **Python 3.8+**, PyTorch 1.9.0+
 
@@ -58,6 +58,13 @@ data/
 ## ⚙️ Configuration
 
 **Important:** Adjust the following parameters based on your DXF complexity and hardware configuration.
+
+| Parameter | File | Description |
+|-----------|------|-------------|
+| `num_entities` | [Geom_process.py](Geom_process.py) | Max entities for geometric processing |
+| `max_len` | [Seq_process.py](Seq_process.py) | Max sequence length |
+| `max_n`, `input_length` | config/[config.py](config/config.py) | Model input dimensions |
+| `batch_size`, `d_model` | config/[config.py](config/config.py) | Memory optimization |
 
 ## 🔄 Data Preprocessing
 
@@ -109,23 +116,15 @@ If you find this work useful for your research, please cite:
 ```bibtex
 @article{hecunr2024dualdxf,
   title={DualDXF: Holistic Representation Learning for CAD Drawings via Dual-Coding of Drawing Exchange Format},
-  author={HeCunr and Authors},
+  author={Guoxin Fan and Authors},
   journal={Conference/Journal Name},
-  year={2024}
+  year={2025}
 }
 ```
 
 ## 📜 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📧 Contact
-
-For any questions or issues, please contact: [102201525@fzu.edu.cn](mailto:102201525@fzu.edu.cn)
 
 ---
 
