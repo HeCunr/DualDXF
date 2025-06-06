@@ -114,12 +114,7 @@ python MRD.py --geom_dir data/Geom/SuperLFD_evaluate \
 If you find this work useful for your research, please cite:
 
 ```bibtex
-@article{hecunr2024dualdxf,
-  title={DualDXF: Holistic Representation Learning for CAD Drawings via Dual-Coding of Drawing Exchange Format},
-  author={Guoxin Fan and Authors},
-  journal={Conference/Journal Name},
-  year={2025}
-}
+
 ```
 
 ## 📜 License
